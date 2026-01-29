@@ -3,30 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>스피키 밈에 대하여</title>
+    <meta name="description" content="최신 AI 도구 추천 및 활용법을 제공합니다. 디자인, 글쓰기, 영상 편집, 코딩 등 분야별 최고의 AI 툴을 만나보세요.">
+    <meta name="keywords" content="AI, 인공지능, AI 툴, AI 추천, ChatGPT, AI 활용, 업무 자동화, AI-Recipe">
+    <title>AI-Recipe - 당신의 완벽한 AI 도구 조합</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <div id="exit-intent-popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2>잠깐만요! 👋</h2>
+            <p>나가시기 전에, <br><strong>당신만 모르는 최신 AI 툴 리스트</strong>를 받아보세요!</p>
+            <form>
+                <input type="email" placeholder="이메일 주소를 입력하세요" required>
+                <button type="submit">무료로 구독하기</button>
+            </form>
+            <p class="small-text">구독을 통해 최신 AI 트렌드와 독점 할인 정보를 얻을 수 있습니다.</p>
+        </div>
+    </div>
+
     <header>
-        <h1>스피키 밈을 아시나요?</h1>
+        <div class="container">
+            <a href="index.html" class="logo"><h1>AI-Recipe.com</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="#ai-by-category">카테고리별 AI</a></li>
+                    <li><a href="#todays-free-ai">오늘의 무료 AI</a></li>
+                    <li><a href="#ai-stacks">직업별 AI 조합</a></li>
+                    <li><a href="#ai-newsletter">AI 뉴스레터</a></li>
+                    <li><a href="contact.html">연락처</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <section id="intro">
-            <h2>스피키(Speaky) 밈이란?</h2>
-            <p>스피키 밈은 게임 '트릭컬 리바이브'의 캐릭터 '스피키'로부터 파생된 인터넷 밈입니다. 이 밈은 한국과 일본 등지에서 인기를 끌고 있습니다.</p>
+        <section class="hero">
+            <div class="container">
+                <h2>AI로 당신의 생산성을 요리하세요!</h2>
+                <p>AI-Recipe는 반복적인 작업을 자동화하고 창의력을 극대화할 수 있는 최고의 AI 도구들을 추천해드립니다.</p>
+            </div>
         </section>
-        <section id="details">
-            <h2>밈의 유래와 특징</h2>
-            <p>게임 속 캐릭터 '스피키'의 특정 대사나 행동이 유저들 사이에서 화제가 되면서 시작되었습니다. 주로 스피키의 귀여운 외모와는 다른, 엉뚱하고 코믹한 행동들이 밈의 주요 소재로 사용됩니다.</p>
+
+        <section id="ai-by-category" class="tools-section">
+            <div class="container">
+                <h2>AI 카테고리별 탐색</h2>
+                <div class="tools-grid">
+                    <!-- 디자인 -->
+                    <div class="tool-card">
+                        <h3>디자인 AI</h3>
+                        <p>로고, 프레젠테이션, SNS 콘텐츠를 몇 초 만에 만드세요.</p>
+                        <span class="tag beginner">초보자용</span>
+                        <span class="tag freemium">부분유료</span>
+                        <a href="#" class="btn">관련 툴 보기</a>
+                    </div>
+                    <!-- 글쓰기 -->
+                    <div class="tool-card">
+                        <h3>글쓰기 AI</h3>
+                        <p>블로그 포스트, 이메일, 마케팅 문구를 자동으로 생성합니다.</p>
+                        <span class="tag beginner">초보자용</span>
+                        <span class="tag paid">유료</span>
+                        <a href="#" class="btn">관련 툴 보기</a>
+                    </div>
+                    <!-- 영상 편집 -->
+                    <div class="tool-card">
+                        <h3>영상 편집 AI</h3>
+                        <p>자막 생성, 배경 제거, 자동 편집으로 영상 제작 시간을 단축하세요.</p>
+                        <span class="tag expert">전문가용</span>
+                        <span class="tag freemium">부분유료</span>
+                        <a href="#" class="btn">관련 툴 보기</a>
+                    </div>
+                    <!-- 코딩 -->
+                    <div class="tool-card">
+                        <h3>코딩 AI</h3>
+                        <p>코드 자동 완성, 디버깅, 테스트 코드 생성을 도와줍니다.</p>
+                        <span class="tag expert">전문가용</span>
+                        <span class="tag free">무료</span>
+                        <a href="#" class="btn">관련 툴 보기</a>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="spread">
-            <h2>밈의 확산</h2>
-            <p>다양한 커뮤니티와 SNS를 통해 패러디물이나 짤방 형태로 빠르게 확산되었습니다. 유저들은 스피키의 이미지를 이용해 새로운 콘텐츠를 끊임없이 만들어내고 있습니다.</p>
+
+        <section id="todays-free-ai" class="highlight-section">
+            <div class="container">
+                <h2>오늘의 무료 AI 툴 ✨</h2>
+                <div class="highlight-card">
+                    <h3>[Runway] Gen-2 영상 생성 모델</h3>
+                    <p>오늘 단 하루, 텍스트와 이미지로 고품질 영상을 만들 수 있는 Gen-2 모델의 크레딧 100개를 무료로 드립니다! 전문가 수준의 영상을 경험해보세요.</p>
+                    <span class="tag expert">전문가용</span>
+                    <span class="tag free">한시적 무료</span>
+                     <!-- 네이티브 광고 배치 공간 -->
+                    <div class="native-ad-placeholder">
+                        <p>(네이티브 광고 영역: '이 툴과 함께 쓰면 좋은 클라우드 스토리지 50% 할인')</p>
+                    </div>
+                    <a href="#" class="btn primary-btn">'Runway' 바로가기</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="comparison-section">
+            <div class="container">
+                 <h2>가장 인기있는 AI 비교</h2>
+                 <p>어떤 AI가 당신에게 맞을지 고민되시나요? AI-Recipe가 직접 비교해드립니다.</p>
+                 <a href="compare.html" class="btn">ChatGPT vs Claude vs Gemini 비교 보러가기</a>
+                 <a href="prompts.html" class="btn">바로 쓰는 프롬프트 공유소 가기</a>
+            </div>
+        </section>
+
+
+        <section id="ai-stacks" class="tools-section">
+            <div class="container">
+                <h2>직업별 AI 조합 (Stack)</h2>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <h3>1인 유튜버를 위한 AI 세트</h3>
+                        <p>대본(ChatGPT) → 영상(Runway) → 썸네일(Midjourney) → 편집(Adobe AI) 조합으로 혼자서도 채널 운영이 가능합니다.</p>
+                        <a href="#" class="btn">자세히 보기</a>
+                    </div>
+                    <div class="tool-card">
+                        <h3>마케터를 위한 콘텐츠 제작 세트</h3>
+                        <p>콘텐츠 아이디어(Gemini) → 블로그 글(Claude) → 이미지(Stable Diffusion) → SNS 예약(Buffer AI)으로 업무를 자동화하세요.</p>
+                        <a href="#" class="btn">자세히 보기</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ai-newsletter" class="newsletter-section">
+            <div class="container">
+                <h2>AI 뉴스레터/블로그</h2>
+                <p>최신 AI 기술 트렌드와 실용적인 사용 팁을 놓치지 마세요. 검색 엔진에 최적화된 글로 새로운 방문자를 유도합니다.</p>
+                <div class="blog-preview">
+                    <a href="#"><h4>블로그: 2024년 반드시 써봐야 할 디자인 AI 10선</h4></a>
+                    <a href="#"><h4>뉴스: 구글의 새로운 AI 모델, 영상 산업을 어떻게 바꿀까?</h4></a>
+                </div>
+            </div>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2026 스피키 밈 연구소</p>
+        <div class="container">
+            <p>&copy; 2024 AI-Recipe.com. All rights reserved.</p>
+            <p>AI로 더 스마트한 작업을. | <a href="contact.html">문의하기</a></p>
+        </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

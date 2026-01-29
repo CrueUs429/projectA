@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 모델 비교 - AI-Recipe</title>
+    <meta name="description" content="가장 인기 있는 언어 모델인 ChatGPT, Claude, Gemini를 직접 비교하여 당신에게 가장 적합한 AI를 찾아보세요.">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .comparison-page {
+            padding: 60px 0;
+        }
+        .main-content {
+            flex: 3;
+        }
+        .sidebar {
+            flex: 1;
+            padding-left: 30px;
+        }
+        .sidebar .ad-placeholder {
+            background: #f0f0f0;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: var(--border-radius);
+            font-style: italic;
+            color: #666;
+        }
+        .comparison-container {
+            display: flex;
+            flex-direction: row;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: var(--box-shadow);
+        }
+        th, td {
+            border: 1px solid var(--light-gray);
+            padding: 15px;
+            text-align: left;
+        }
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            font-size: 1.1rem;
+        }
+        tr:nth-child(even) {
+            background-color: var(--background-color);
+        }
+        @media (max-width: 992px) {
+            .comparison-container {
+                flex-direction: column;
+            }
+            .sidebar {
+                padding-left: 0;
+                margin-top: 40px;
+            }
+            .sidebar .ad-placeholder {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo"><h1>AI-Recipe.com</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html#ai-by-category">카테고리별 AI</a></li>
+                    <li><a href="index.html#todays-free-ai">오늘의 무료 AI</a></li>
+                    <li><a href="index.html#ai-stacks">직업별 AI 조합</a></li>
+                    <li><a href="index.html#ai-newsletter">AI 뉴스레터</a></li>
+                    <li><a href="contact.html">연락처</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="comparison-page">
+        <div class="container">
+            <h2>AI 대전: ChatGPT vs Claude vs Gemini</h2>
+            <div class="comparison-container">
+                <div class="main-content">
+                    <p>어떤 AI가 당신의 글쓰기, 코딩, 창의적 작업을 도와줄 최고의 파트너가 될까요? 세 가지 주요 모델의 특징을 한눈에 비교해 보세요.</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>기능</th>
+                                <th>ChatGPT (GPT-4)</th>
+                                <th>Claude 3 (Opus)</th>
+                                <th>Gemini (Advanced)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>강점</strong></td>
+                                <td>뛰어난 창의성과 유연한 대화 능력</td>
+                                <td>방대한 양의 텍스트 처리 및 요약</td>
+                                <td>구글 생태계 연동, 멀티모달 기능</td>
+                            </tr>
+                            <tr>
+                                <td><strong>추천 사용자</strong></td>
+                                <td>콘텐츠 크리에이터, 작가</td>
+                                <td>연구원, 법률 전문가, 분석가</td>
+                                <td>개발자, 마케터, 일반 사용자</td>
+                            </tr>
+                            <tr>
+                                <td><strong>특징</strong></td>
+                                <td>가장 널리 사용되며 방대한 학습 데이터 보유</td>
+                                <td>최대 200K 토큰의 컨텍스트 창으로 긴 문서 이해</td>
+                                <td>실시간 정보 검색 및 이미지/음성 이해</td>
+                            </tr>
+                             <tr>
+                                <td><strong>가격</strong></td>
+                                <td>무료 버전 / Plus ($20/월)</td>
+                                <td>무료 버전 / Pro ($20/월)</td>
+                                <td>무료 버전 / Advanced ($19.99/월)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <aside class="sidebar">
+                    <div class="ad-placeholder">
+                        <p><strong>사이드바 배너 광고</strong><br>(이 영역에 광고가 표시됩니다)</p>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AI-Recipe.com. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

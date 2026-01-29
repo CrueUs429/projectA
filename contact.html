@@ -3,77 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>제휴 문의</title>
+    <title>연락처 - AI-Recipe</title>
+    <meta name="description" content="AI-Recipe에 문의사항이나 제휴 제안이 있으시면 연락주세요.">
+    <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f4f4f4;
-        }
-        .container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            margin: auto;
-        }
-        h1 {
-            color: #333;
+        .contact-page {
+            padding: 60px 0;
             text-align: center;
         }
-        label {
-            display: block;
-            margin-bottom: 8px;
-            color: #555;
+        .contact-form {
+            max-width: 600px;
+            margin: 40px auto;
+            text-align: left;
         }
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: calc(100% - 20px);
-            padding: 10px;
+        .form-group {
             margin-bottom: 20px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: var(--border-radius);
             box-sizing: border-box;
         }
-        textarea {
-            resize: vertical;
-            min-height: 100px;
+        .form-group textarea {
+            min-height: 150px;
         }
-        button {
-            background-color: #007bff;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
+        .submit-btn {
             width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: var(--border-radius);
+            background: var(--primary-color);
+            color: white;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
         }
-        button:hover {
-            background-color: #0056b3;
+        .submit-btn:hover {
+            background-color: #357ABD;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>제휴 문의</h1>
-        <form action="https://formspree.io/f/xpqdgnqp" method="POST">
-            <label for="name">이름:</label>
-            <input type="text" id="name" name="name" required>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo"><h1>AI-Recipe.com</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html#ai-by-category">카테고리별 AI</a></li>
+                    <li><a href="index.html#todays-free-ai">오늘의 무료 AI</a></li>
+                    <li><a href="index.html#ai-stacks">직업별 AI 조합</a></li>
+                    <li><a href="index.html#ai-newsletter">AI 뉴스레터</a></li>
+                    <li><a href="contact.html">연락처</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-            <label for="email">이메일:</label>
-            <input type="email" id="email" name="email" required>
+    <main class="contact-page">
+        <div class="container">
+            <h2>문의하기</h2>
+            <p>광고, 제휴, 또는 사이트에 대한 의견이 있으시면 아래 양식을 통해 알려주세요.</p>
+            
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">이름</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">이메일</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">메시지</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">보내기</button>
+            </form>
+        </div>
+    </main>
 
-            <label for="company">회사/단체명 (선택 사항):</label>
-            <input type="text" id="company" name="company">
-
-            <label for="message">문의 내용:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">문의 제출</button>
-        </form>
-    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AI-Recipe.com. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

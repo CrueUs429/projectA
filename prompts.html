@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프롬프트 공유소 - AI-Recipe</title>
+    <meta name="description" content="Midjourney, ChatGPT 등 다양한 AI 툴에서 바로 사용할 수 있는 고품질 프롬프트를 복사하여 사용해 보세요.">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .prompt-page {
+            padding: 60px 0;
+        }
+        .prompt-section {
+            margin-bottom: 50px;
+        }
+        .prompt-card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            padding: 25px;
+            margin-top: 20px;
+        }
+        .prompt-card h3 {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        pre {
+            background-color: #2d2d2d;
+            color: #f1f1f1;
+            padding: 20px;
+            border-radius: var(--border-radius);
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            position: relative;
+        }
+        .copy-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #555;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+         .copy-btn:hover {
+            background: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo"><h1>AI-Recipe.com</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html#ai-by-category">카테고리별 AI</a></li>
+                    <li><a href="index.html#todays-free-ai">오늘의 무료 AI</a></li>
+                    <li><a href="index.html#ai-stacks">직업별 AI 조합</a></li>
+                    <li><a href="index.html#ai-newsletter">AI 뉴스레터</a></li>
+                    <li><a href="contact.html">연락처</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="prompt-page">
+        <div class="container">
+            <h2>프롬프트 공유소</h2>
+            <p>결과물의 퀄리티를 높여주는 프롬프트를 복사하여 바로 사용해보세요.</p>
+
+            <section class="prompt-section">
+                <h2>🎨 Midjourney: 이미지 생성</h2>
+                <div class="prompt-card">
+                    <h3>영화 '듄' 스타일의 미래 도시</h3>
+                    <pre><code>cinematic photo of a futuristic city in the style of Dune, hyper-detailed, epic scale, desert planet, orange and teal color grading, 8k --ar 16:9 --style raw</code><button class="copy-btn">복사</button></pre>
+                </div>
+                <div class="prompt-card">
+                    <h3>귀여운 3D 캐릭터 아이콘</h3>
+                    <pre><code>cute 3D fluffy cat character icon, soft cinematic lighting, studio background, Pixar style, vibrant colors --style raw</code><button class="copy-btn">복사</button></pre>
+                </div>
+            </section>
+
+            <section class="prompt-section">
+                <h2>✍️ ChatGPT: 글쓰기</h2>
+                <div class="prompt-card">
+                    <h3>친절한 고객 서비스 이메일 답장</h3>
+                    <pre><code>You are a friendly and helpful customer service representative. A customer is upset because their package is delayed. Write a reassuring and apologetic email that explains the situation (a logistics issue) and offers a 10% discount on their next purchase as compensation.</code><button class="copy-btn">복사</button></pre>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AI-Recipe.com. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('.copy-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const pre = button.parentElement;
+                const code = pre.querySelector('code');
+                navigator.clipboard.writeText(code.innerText).then(() => {
+                    button.innerText = '복사됨!';
+                    setTimeout(() => {
+                        button.innerText = '복사';
+                    }, 2000);
+                }).catch(err => {
+                    console.error('Failed to copy: ', err);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
