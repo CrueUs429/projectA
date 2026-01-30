@@ -49,57 +49,26 @@
         <section id="ai-by-category" class="tools-section">
             <div class="container">
                 <h2>AI 카테고리별 탐색</h2>
-                <div class="tools-grid">
-                    <!-- 디자인 -->
-                    <div class="tool-card">
-                        <h3>디자인 AI</h3>
-                        <p>로고, 프레젠테이션, SNS 콘텐츠를 몇 초 만에 만드세요.</p>
-                        <span class="tag beginner">초보자용</span>
-                        <span class="tag freemium">부분유료</span>
-                        <a href="#" class="btn">관련 툴 보기</a>
-                    </div>
-                    <!-- 글쓰기 -->
-                    <div class="tool-card">
-                        <h3>글쓰기 AI</h3>
-                        <p>블로그 포스트, 이메일, 마케팅 문구를 자동으로 생성합니다.</p>
-                        <span class="tag beginner">초보자용</span>
-                        <span class="tag paid">유료</span>
-                        <a href="#" class="btn">관련 툴 보기</a>
-                    </div>
-                    <!-- 영상 편집 -->
-                    <div class="tool-card">
-                        <h3>영상 편집 AI</h3>
-                        <p>자막 생성, 배경 제거, 자동 편집으로 영상 제작 시간을 단축하세요.</p>
-                        <span class="tag expert">전문가용</span>
-                        <span class="tag freemium">부분유료</span>
-                        <a href="#" class="btn">관련 툴 보기</a>
-                    </div>
-                    <!-- 코딩 -->
-                    <div class="tool-card">
-                        <h3>코딩 AI</h3>
-                        <p>코드 자동 완성, 디버깅, 테스트 코드 생성을 도와줍니다.</p>
-                        <span class="tag expert">전문가용</span>
-                        <span class="tag free">무료</span>
-                        <a href="#" class="btn">관련 툴 보기</a>
+                <div id="search-filter-container">
+                    <input type="search" id="search-input" placeholder="AI 툴 이름으로 검색...">
+                    <div id="filter-buttons">
+                        <button class="filter-btn active" data-category="all">전체</button>
+                        <button class="filter-btn" data-category="디자인">디자인</button>
+                        <button class="filter-btn" data-category="글쓰기">글쓰기</button>
+                        <button class="filter-btn" data-category="영상 편집">영상 편집</button>
+                        <button class="filter-btn" data-category="코딩">코딩</button>
                     </div>
                 </div>
+                <!-- AI Tools will be dynamically injected here -->
+                <div id="ai-tools-grid" class="tools-grid"></div>
             </div>
         </section>
 
         <section id="todays-free-ai" class="highlight-section">
             <div class="container">
                 <h2>오늘의 무료 AI 툴 ✨</h2>
-                <div class="highlight-card">
-                    <h3>[Runway] Gen-2 영상 생성 모델</h3>
-                    <p>오늘 단 하루, 텍스트와 이미지로 고품질 영상을 만들 수 있는 Gen-2 모델의 크레딧 100개를 무료로 드립니다! 전문가 수준의 영상을 경험해보세요.</p>
-                    <span class="tag expert">전문가용</span>
-                    <span class="tag free">한시적 무료</span>
-                     <!-- 네이티브 광고 배치 공간 -->
-                    <div class="native-ad-placeholder">
-                        <p>(네이티브 광고 영역: '이 툴과 함께 쓰면 좋은 클라우드 스토리지 50% 할인')</p>
-                    </div>
-                    <a href="#" class="btn primary-btn">'Runway' 바로가기</a>
-                </div>
+                <!-- Today's Free AI Tool will be dynamically injected here -->
+                <div id="todays-free-ai-container"></div>
             </div>
         </section>
         
@@ -116,18 +85,8 @@
         <section id="ai-stacks" class="tools-section">
             <div class="container">
                 <h2>직업별 AI 조합 (Stack)</h2>
-                <div class="tools-grid">
-                    <div class="tool-card">
-                        <h3>1인 유튜버를 위한 AI 세트</h3>
-                        <p>대본(ChatGPT) → 영상(Runway) → 썸네일(Midjourney) → 편집(Adobe AI) 조합으로 혼자서도 채널 운영이 가능합니다.</p>
-                        <a href="#" class="btn">자세히 보기</a>
-                    </div>
-                    <div class="tool-card">
-                        <h3>마케터를 위한 콘텐츠 제작 세트</h3>
-                        <p>콘텐츠 아이디어(Gemini) → 블로그 글(Claude) → 이미지(Stable Diffusion) → SNS 예약(Buffer AI)으로 업무를 자동화하세요.</p>
-                        <a href="#" class="btn">자세히 보기</a>
-                    </div>
-                </div>
+                <!-- AI Stacks will be dynamically injected here -->
+                <div id="ai-stacks-grid" class="tools-grid"></div>
             </div>
         </section>
 
@@ -135,10 +94,8 @@
             <div class="container">
                 <h2>AI 뉴스레터/블로그</h2>
                 <p>최신 AI 기술 트렌드와 실용적인 사용 팁을 놓치지 마세요. 검색 엔진에 최적화된 글로 새로운 방문자를 유도합니다.</p>
-                <div class="blog-preview">
-                    <a href="#"><h4>블로그: 2024년 반드시 써봐야 할 디자인 AI 10선</h4></a>
-                    <a href="#"><h4>뉴스: 구글의 새로운 AI 모델, 영상 산업을 어떻게 바꿀까?</h4></a>
-                </div>
+                <!-- Blog posts will be dynamically injected here -->
+                <div id="blog-preview-container" class="blog-preview"></div>
             </div>
         </section>
     </main>
@@ -150,6 +107,7 @@
         </div>
     </footer>
 
+    <script src="data.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
